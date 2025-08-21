@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratica 1 HTML e CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+  </head>
+  <body>
+    <header>
+      <img src="imgs/logo.png" alt="Logo da pagina" title="Logo da pagina" />
+
+      <h1>Geladeiras & Outro - FALE CONOSCO</h1>
+    </header>
+    <!--A tag "nav" cria uma área para navegação com menus e outros-->
+    <nav>
+      <!--A tag "a" cria um hiperlink para outro arquivo (locas), ou site (externo) 
+      ou algum local da propria pagina(interno)
+      a tag "div" define uma divisão ou seção
+      em uma pagina HTML, o elemento "div" é 
+      frequentemente utilizado como conteiner
+      para outros elementos-->
+      <a href="index.html"><div class="opcao">Inicio</div></a>
+      <a href="produtos.html"><div class="opcao">Geladeiras e Freezer</div></a>
+      <a href="faleconosco.html"><div class="opcao">Fale conosco</div></a>
+    </nav>
+    <!--A tag "section" define uma seção dos conteúdos de uma página-->
+    <section>
+      <h2>Fale conosco</h2>
+      <p>
+        Ficou com alguma dúvida? Preencha este formulario e enraremos em
+        contato?
+      </p>
+      <form name="frmfaleConosco" method="post" action="#">
+        <fieldset class="faleConosco">
+          <legend>Dados pessoais:</legend>
+          <label for="nome">Nome:</label>
+          <br />
+          <input type="text" name="txtnome" id="nome" />
+          <br />
+          <label for="telefone">Telefone:</label>
+          <br />
+          <input type="text" name="txttelefone" id="telefone" />
+          <br />
+          <label for="emai">Email:</label>
+          <br />
+          <input type="email" name="txtemail" id="email" />
+          <br />
+          <br />
+          <button type="submit">ENVIAR</button>
+        </fieldset>
+        <fieldset class="faleConosco">
+          <legend>Motivo do contato:</legend>
+          <br />
+          <label for="motivo">Motivo</label>
+          <select name="selmotivo" id="motivo">
+            <option value="">Escolha</option>
+            <option value="RE">Reclamação</option>
+            <option value="SU">Sugestão</option>
+            <option value="PR">Informação sobre produto</option>
+          </select>
+          <br />
+          <br />
+          <label for="comentario">Comentario</label>
+          <br />
+          <br />
+          <textarea name="txtacomentario" id="comentario"></textarea>
+          <br />
+          <button type="reset">Limpar</button
+          ><button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+    <!--A tag "floter" define a criação de um rodapé-->
+    <footer>Copyringht © ADS2025</footer>
+  </body>
+</html>

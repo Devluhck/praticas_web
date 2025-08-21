@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*Configuração geral do corpo da página */
+
+body{
+
+    background-color:#00FF7F;
+}
+h1{
+    color: black;
+    padding: 10px;
+}
+p{
+    color:black;
+}
